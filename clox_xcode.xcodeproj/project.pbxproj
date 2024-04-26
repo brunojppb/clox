@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1553AD522BD8D8EA006F5686 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1553AD512BD8D8EA006F5686 /* main.c */; };
+		1553AD5D2BD8D985006F5686 /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 1553AD5C2BD8D985006F5686 /* memory.c */; };
+		1553AD602BD8D9B2006F5686 /* chunk.c in Sources */ = {isa = PBXBuildFile; fileRef = 1553AD5F2BD8D9B2006F5686 /* chunk.c */; };
+		1553AD632BD8DCCC006F5686 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 1553AD622BD8DCCB006F5686 /* debug.c */; };
+		1553AD662BD8E32C006F5686 /* value.c in Sources */ = {isa = PBXBuildFile; fileRef = 1553AD652BD8E32C006F5686 /* value.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,15 @@
 /* Begin PBXFileReference section */
 		1553AD4E2BD8D8EA006F5686 /* clox_xcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = clox_xcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		1553AD512BD8D8EA006F5686 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		1553AD582BD8D95B006F5686 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		1553AD5B2BD8D985006F5686 /* memory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = memory.h; sourceTree = "<group>"; };
+		1553AD5C2BD8D985006F5686 /* memory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = memory.c; sourceTree = "<group>"; };
+		1553AD5E2BD8D9B2006F5686 /* chunk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chunk.h; sourceTree = "<group>"; };
+		1553AD5F2BD8D9B2006F5686 /* chunk.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = chunk.c; sourceTree = "<group>"; };
+		1553AD612BD8DCCB006F5686 /* debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		1553AD622BD8DCCB006F5686 /* debug.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
+		1553AD642BD8E32C006F5686 /* value.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
+		1553AD652BD8E32C006F5686 /* value.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = value.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +70,16 @@
 		1553AD502BD8D8EA006F5686 /* clox_xcode */ = {
 			isa = PBXGroup;
 			children = (
+				1553AD5E2BD8D9B2006F5686 /* chunk.h */,
+				1553AD5F2BD8D9B2006F5686 /* chunk.c */,
+				1553AD5B2BD8D985006F5686 /* memory.h */,
+				1553AD5C2BD8D985006F5686 /* memory.c */,
 				1553AD512BD8D8EA006F5686 /* main.c */,
+				1553AD582BD8D95B006F5686 /* common.h */,
+				1553AD612BD8DCCB006F5686 /* debug.h */,
+				1553AD622BD8DCCB006F5686 /* debug.c */,
+				1553AD642BD8E32C006F5686 /* value.h */,
+				1553AD652BD8E32C006F5686 /* value.c */,
 			);
 			path = clox_xcode;
 			sourceTree = "<group>";
@@ -119,7 +141,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1553AD662BD8E32C006F5686 /* value.c in Sources */,
+				1553AD602BD8D9B2006F5686 /* chunk.c in Sources */,
+				1553AD5D2BD8D985006F5686 /* memory.c in Sources */,
 				1553AD522BD8D8EA006F5686 /* main.c in Sources */,
+				1553AD632BD8DCCC006F5686 /* debug.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +270,7 @@
 		1553AD562BD8D8EA006F5686 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28AKRM32K5;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -254,6 +281,7 @@
 		1553AD572BD8D8EA006F5686 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28AKRM32K5;
 				ENABLE_HARDENED_RUNTIME = YES;

@@ -1,14 +1,16 @@
-//
-//  main.c
-//  clox_xcode
-//
-//  Created by Bruno Paulino on 24.04.24.
-//
-
 #include <stdio.h>
+#include "common.h"
+#include "chunk.h"
+#include "debug.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+int main(int argc, const char *argv[])
+{
+    Chunk chunk;
+    initChunk(&chunk);
+    writeChunk(&chunk, OP_RETURN);
+    
+    disassembleChunk(&chunk, "Test chunk");
+    
+    freeChunk(&chunk);
     return 0;
 }
