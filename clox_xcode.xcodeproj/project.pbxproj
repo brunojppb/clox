@@ -38,6 +38,7 @@
 		1553AD622BD8DCCB006F5686 /* debug.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
 		1553AD642BD8E32C006F5686 /* value.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
 		1553AD652BD8E32C006F5686 /* value.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = value.c; sourceTree = "<group>"; };
+		1553AD672BDB7F0E006F5686 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		1553AD452BD8D8EA006F5686 = {
 			isa = PBXGroup;
 			children = (
+				1553AD672BDB7F0E006F5686 /* README.md */,
 				1553AD502BD8D8EA006F5686 /* clox_xcode */,
 				1553AD4F2BD8D8EA006F5686 /* Products */,
 			);
