@@ -14,11 +14,8 @@
 // but certainly not recommend on a production-grade lang
 VM vm;
 
-void initVM(void) {
-    
-}
-void freeVM(void) {
-    
+static void resetStack(void) {
+    vm.stackTop = vm.stack;
 }
 
 
@@ -57,3 +54,19 @@ InterpretResult interpret(Chunk *chunk) {
     return run();
 }
 
+void initVM(void) {
+    resetStack();
+}
+void freeVM(void) {
+    
+}
+
+void push(Value value) {
+    *vm.stackTop = value;
+    vm.stackTop++;
+}
+
+Value pop(void) {
+    vm.stackTop--;
+    return *vm.stackTop;
+}
