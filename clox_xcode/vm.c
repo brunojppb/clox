@@ -38,6 +38,9 @@ static InterpretResult run(void) {
         
         uint8_t instruction;
         switch (instruction = READ_BYTE()) {
+            case OP_NEGATE:
+                push(-pop());
+                break;
                 // TODO: Once we have functions in clox
                 // we will reporpose this to return out of the function instead.
             case OP_RETURN: {
