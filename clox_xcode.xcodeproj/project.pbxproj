@@ -13,6 +13,8 @@
 		1553AD632BD8DCCC006F5686 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 1553AD622BD8DCCB006F5686 /* debug.c */; };
 		1553AD662BD8E32C006F5686 /* value.c in Sources */ = {isa = PBXBuildFile; fileRef = 1553AD652BD8E32C006F5686 /* value.c */; };
 		1553AD6A2BDC0BB9006F5686 /* vm.c in Sources */ = {isa = PBXBuildFile; fileRef = 1553AD692BDC0BB9006F5686 /* vm.c */; };
+		1553AD6D2BE03B21006F5686 /* compiler.c in Sources */ = {isa = PBXBuildFile; fileRef = 1553AD6C2BE03B21006F5686 /* compiler.c */; };
+		1553AD702BE03B91006F5686 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 1553AD6F2BE03B91006F5686 /* scanner.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +44,10 @@
 		1553AD672BDB7F0E006F5686 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1553AD682BDC0BB9006F5686 /* vm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vm.h; sourceTree = "<group>"; };
 		1553AD692BDC0BB9006F5686 /* vm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vm.c; sourceTree = "<group>"; };
+		1553AD6B2BE03B21006F5686 /* compiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = compiler.h; sourceTree = "<group>"; };
+		1553AD6C2BE03B21006F5686 /* compiler.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = compiler.c; sourceTree = "<group>"; };
+		1553AD6E2BE03B91006F5686 /* scanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scanner.h; sourceTree = "<group>"; };
+		1553AD6F2BE03B91006F5686 /* scanner.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scanner.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,10 @@
 				1553AD652BD8E32C006F5686 /* value.c */,
 				1553AD682BDC0BB9006F5686 /* vm.h */,
 				1553AD692BDC0BB9006F5686 /* vm.c */,
+				1553AD6B2BE03B21006F5686 /* compiler.h */,
+				1553AD6C2BE03B21006F5686 /* compiler.c */,
+				1553AD6E2BE03B91006F5686 /* scanner.h */,
+				1553AD6F2BE03B91006F5686 /* scanner.c */,
 			);
 			path = clox_xcode;
 			sourceTree = "<group>";
@@ -152,6 +162,8 @@
 				1553AD602BD8D9B2006F5686 /* chunk.c in Sources */,
 				1553AD5D2BD8D985006F5686 /* memory.c in Sources */,
 				1553AD522BD8D8EA006F5686 /* main.c in Sources */,
+				1553AD702BE03B91006F5686 /* scanner.c in Sources */,
+				1553AD6D2BE03B21006F5686 /* compiler.c in Sources */,
 				1553AD6A2BDC0BB9006F5686 /* vm.c in Sources */,
 				1553AD632BD8DCCC006F5686 /* debug.c in Sources */,
 			);
